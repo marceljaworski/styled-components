@@ -10,7 +10,7 @@ import Mynavbar from './components/Mynavbar';
 
 function App() {
   const cards = Data.map((props, index)=>{
-    return <Mycard el={props} key= {index} />
+    return <Col><Mycard el={props} key= {index} /></Col>
   })
   return (
     <div className="App">
@@ -18,7 +18,7 @@ function App() {
       
       <Container>
         <Row>
-          <Col>{cards}</Col>
+          {cards}
         </Row>
       </Container>
     </div>
